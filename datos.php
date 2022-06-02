@@ -9,14 +9,14 @@ $client = new MongoDB\Client(
     'mongodb+srv://yuri:123@cluster0.kkviz.mongodb.net/pronostico?retryWrites=true&w=majority');
 
 $tb=$client->pronostico->araucaclima;
-/*
+
 $filter= ['$and'=>
             [
                 ['VelocidaddelViento'=>['$eq'=>$a]],
                 ['DirecciondelViento'=>['$eq'=>$b]]
             ]
         ];
-
+/*
 $rows = $tb->find($filter);
 $datos= iterator_to_array($rows);
 echo json_encode($datos);
