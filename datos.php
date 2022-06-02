@@ -16,8 +16,9 @@ $filter= ['$and'=>
                 ['DirecciondelViento'=>['$eq'=>$b]]
             ]
         ];
-/*
+
 $rows = $tb->find($filter);
+/*
 $datos= iterator_to_array($rows);
 echo json_encode($datos);
 /*$registro=array(
