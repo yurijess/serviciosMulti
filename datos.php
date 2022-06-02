@@ -7,8 +7,9 @@ $b=$_GET['direccion'];
 
 $client = new MongoDB\Client(
     'mongodb+srv://yuri:123@cluster0.kkviz.mongodb.net/pronostico?retryWrites=true&w=majority');
-/*
+
 $tb=$client->pronostico->araucaclima;
+/*
 $filter= ['$and'=>
             [
                 ['VelocidaddelViento'=>['$eq'=>$a]],
